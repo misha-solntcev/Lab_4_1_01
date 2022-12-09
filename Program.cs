@@ -32,7 +32,13 @@ namespace Lab_4_1_01
             Console.WriteLine($"sred={sred}");
 
             foreach (var item in Array)            
-                Console.Write(item + " ");            
+                Console.Write(item + " ");
+            Console.WriteLine("\n");
+
+            // Linq
+            var res = (decimal)Array.Where(i => i > 0).Average();
+            Console.WriteLine(res);
+
             Console.ReadKey();
         }
     }
